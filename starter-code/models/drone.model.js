@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
  const Schema   = mongoose.Schema;
 
  const droneSchema = new Schema({
+ const DroneSchema = new Schema({
 
    name : String,
    propellers: Number,
@@ -9,5 +10,5 @@ const mongoose = require('mongoose');
  });
 
  const Drone = mongoose.model('Drone', droneSchema);
-
+ const Drone = mongoose.model('Drone', DroneSchema)
  module.exports = Drone;
